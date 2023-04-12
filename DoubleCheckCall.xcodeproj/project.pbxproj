@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3973A28D29E6BE370073D91F /* DoubleCheckCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A28C29E6BE370073D91F /* DoubleCheckCallApp.swift */; };
+		3973A28F29E6BE370073D91F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A28E29E6BE370073D91F /* ContentView.swift */; };
+		3973A29129E6BE3B0073D91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3973A29029E6BE3B0073D91F /* Assets.xcassets */; };
+		3973A29429E6BE3B0073D91F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3973A29329E6BE3B0073D91F /* Preview Assets.xcassets */; };
+		3973A29E29E6BE3B0073D91F /* DoubleCheckCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A29D29E6BE3B0073D91F /* DoubleCheckCallTests.swift */; };
+		3973A2A829E6BE3B0073D91F /* DoubleCheckCallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A2A729E6BE3B0073D91F /* DoubleCheckCallUITests.swift */; };
+		3973A2AA29E6BE3B0073D91F /* DoubleCheckCallUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A2A929E6BE3B0073D91F /* DoubleCheckCallUITestsLaunchTests.swift */; };
+		3973A2B729E6BED20073D91F /* MainTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A2B629E6BED20073D91F /* MainTabbarView.swift */; };
+		3973A2BA29E6C8D70073D91F /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A2B929E6C8D70073D91F /* KeypadView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3973A29A29E6BE3B0073D91F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3973A28129E6BE370073D91F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3973A28829E6BE370073D91F;
+			remoteInfo = DoubleCheckCall;
+		};
+		3973A2A429E6BE3B0073D91F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3973A28129E6BE370073D91F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3973A28829E6BE370073D91F;
+			remoteInfo = DoubleCheckCall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3973A28929E6BE370073D91F /* DoubleCheckCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleCheckCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3973A28C29E6BE370073D91F /* DoubleCheckCallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCheckCallApp.swift; sourceTree = "<group>"; };
+		3973A28E29E6BE370073D91F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3973A29029E6BE3B0073D91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3973A29329E6BE3B0073D91F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3973A29929E6BE3B0073D91F /* DoubleCheckCallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoubleCheckCallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3973A29D29E6BE3B0073D91F /* DoubleCheckCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCheckCallTests.swift; sourceTree = "<group>"; };
+		3973A2A329E6BE3B0073D91F /* DoubleCheckCallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoubleCheckCallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3973A2A729E6BE3B0073D91F /* DoubleCheckCallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCheckCallUITests.swift; sourceTree = "<group>"; };
+		3973A2A929E6BE3B0073D91F /* DoubleCheckCallUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCheckCallUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3973A2B629E6BED20073D91F /* MainTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarView.swift; sourceTree = "<group>"; };
+		3973A2B929E6C8D70073D91F /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3973A28629E6BE370073D91F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3973A29629E6BE3B0073D91F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3973A2A029E6BE3B0073D91F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3973A28029E6BE370073D91F = {
+			isa = PBXGroup;
+			children = (
+				3973A28B29E6BE370073D91F /* DoubleCheckCall */,
+				3973A29C29E6BE3B0073D91F /* DoubleCheckCallTests */,
+				3973A2A629E6BE3B0073D91F /* DoubleCheckCallUITests */,
+				3973A28A29E6BE370073D91F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3973A28A29E6BE370073D91F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3973A28929E6BE370073D91F /* DoubleCheckCall.app */,
+				3973A29929E6BE3B0073D91F /* DoubleCheckCallTests.xctest */,
+				3973A2A329E6BE3B0073D91F /* DoubleCheckCallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3973A28B29E6BE370073D91F /* DoubleCheckCall */ = {
+			isa = PBXGroup;
+			children = (
+				3973A28C29E6BE370073D91F /* DoubleCheckCallApp.swift */,
+				3973A2B829E6BED80073D91F /* View */,
+				3973A28E29E6BE370073D91F /* ContentView.swift */,
+				3973A29029E6BE3B0073D91F /* Assets.xcassets */,
+				3973A29229E6BE3B0073D91F /* Preview Content */,
+			);
+			path = DoubleCheckCall;
+			sourceTree = "<group>";
+		};
+		3973A29229E6BE3B0073D91F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3973A29329E6BE3B0073D91F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3973A29C29E6BE3B0073D91F /* DoubleCheckCallTests */ = {
+			isa = PBXGroup;
+			children = (
+				3973A29D29E6BE3B0073D91F /* DoubleCheckCallTests.swift */,
+			);
+			path = DoubleCheckCallTests;
+			sourceTree = "<group>";
+		};
+		3973A2A629E6BE3B0073D91F /* DoubleCheckCallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3973A2A729E6BE3B0073D91F /* DoubleCheckCallUITests.swift */,
+				3973A2A929E6BE3B0073D91F /* DoubleCheckCallUITestsLaunchTests.swift */,
+			);
+			path = DoubleCheckCallUITests;
+			sourceTree = "<group>";
+		};
+		3973A2B829E6BED80073D91F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3973A2B629E6BED20073D91F /* MainTabbarView.swift */,
+				3973A2B929E6C8D70073D91F /* KeypadView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3973A28829E6BE370073D91F /* DoubleCheckCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3973A2AD29E6BE3B0073D91F /* Build configuration list for PBXNativeTarget "DoubleCheckCall" */;
+			buildPhases = (
+				3973A28529E6BE370073D91F /* Sources */,
+				3973A28629E6BE370073D91F /* Frameworks */,
+				3973A28729E6BE370073D91F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoubleCheckCall;
+			productName = DoubleCheckCall;
+			productReference = 3973A28929E6BE370073D91F /* DoubleCheckCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3973A29829E6BE3B0073D91F /* DoubleCheckCallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3973A2B029E6BE3B0073D91F /* Build configuration list for PBXNativeTarget "DoubleCheckCallTests" */;
+			buildPhases = (
+				3973A29529E6BE3B0073D91F /* Sources */,
+				3973A29629E6BE3B0073D91F /* Frameworks */,
+				3973A29729E6BE3B0073D91F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3973A29B29E6BE3B0073D91F /* PBXTargetDependency */,
+			);
+			name = DoubleCheckCallTests;
+			productName = DoubleCheckCallTests;
+			productReference = 3973A29929E6BE3B0073D91F /* DoubleCheckCallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3973A2A229E6BE3B0073D91F /* DoubleCheckCallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3973A2B329E6BE3B0073D91F /* Build configuration list for PBXNativeTarget "DoubleCheckCallUITests" */;
+			buildPhases = (
+				3973A29F29E6BE3B0073D91F /* Sources */,
+				3973A2A029E6BE3B0073D91F /* Frameworks */,
+				3973A2A129E6BE3B0073D91F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3973A2A529E6BE3B0073D91F /* PBXTargetDependency */,
+			);
+			name = DoubleCheckCallUITests;
+			productName = DoubleCheckCallUITests;
+			productReference = 3973A2A329E6BE3B0073D91F /* DoubleCheckCallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3973A28129E6BE370073D91F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3973A28829E6BE370073D91F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					3973A29829E6BE3B0073D91F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3973A28829E6BE370073D91F;
+					};
+					3973A2A229E6BE3B0073D91F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3973A28829E6BE370073D91F;
+					};
+				};
+			};
+			buildConfigurationList = 3973A28429E6BE370073D91F /* Build configuration list for PBXProject "DoubleCheckCall" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3973A28029E6BE370073D91F;
+			productRefGroup = 3973A28A29E6BE370073D91F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3973A28829E6BE370073D91F /* DoubleCheckCall */,
+				3973A29829E6BE3B0073D91F /* DoubleCheckCallTests */,
+				3973A2A229E6BE3B0073D91F /* DoubleCheckCallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3973A28729E6BE370073D91F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3973A29429E6BE3B0073D91F /* Preview Assets.xcassets in Resources */,
+				3973A29129E6BE3B0073D91F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3973A29729E6BE3B0073D91F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3973A2A129E6BE3B0073D91F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3973A28529E6BE370073D91F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3973A2BA29E6C8D70073D91F /* KeypadView.swift in Sources */,
+				3973A28F29E6BE370073D91F /* ContentView.swift in Sources */,
+				3973A2B729E6BED20073D91F /* MainTabbarView.swift in Sources */,
+				3973A28D29E6BE370073D91F /* DoubleCheckCallApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3973A29529E6BE3B0073D91F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3973A29E29E6BE3B0073D91F /* DoubleCheckCallTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3973A29F29E6BE3B0073D91F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3973A2AA29E6BE3B0073D91F /* DoubleCheckCallUITestsLaunchTests.swift in Sources */,
+				3973A2A829E6BE3B0073D91F /* DoubleCheckCallUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3973A29B29E6BE3B0073D91F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3973A28829E6BE370073D91F /* DoubleCheckCall */;
+			targetProxy = 3973A29A29E6BE3B0073D91F /* PBXContainerItemProxy */;
+		};
+		3973A2A529E6BE3B0073D91F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3973A28829E6BE370073D91F /* DoubleCheckCall */;
+			targetProxy = 3973A2A429E6BE3B0073D91F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3973A2AB29E6BE3B0073D91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3973A2AC29E6BE3B0073D91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3973A2AE29E6BE3B0073D91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DoubleCheckCall/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3973A2AF29E6BE3B0073D91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DoubleCheckCall/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3973A2B129E6BE3B0073D91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoubleCheckCall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoubleCheckCall";
+			};
+			name = Debug;
+		};
+		3973A2B229E6BE3B0073D91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCallTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DoubleCheckCall.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DoubleCheckCall";
+			};
+			name = Release;
+		};
+		3973A2B429E6BE3B0073D91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoubleCheckCall;
+			};
+			name = Debug;
+		};
+		3973A2B529E6BE3B0073D91F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCallUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DoubleCheckCall;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3973A28429E6BE370073D91F /* Build configuration list for PBXProject "DoubleCheckCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3973A2AB29E6BE3B0073D91F /* Debug */,
+				3973A2AC29E6BE3B0073D91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3973A2AD29E6BE3B0073D91F /* Build configuration list for PBXNativeTarget "DoubleCheckCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3973A2AE29E6BE3B0073D91F /* Debug */,
+				3973A2AF29E6BE3B0073D91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3973A2B029E6BE3B0073D91F /* Build configuration list for PBXNativeTarget "DoubleCheckCallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3973A2B129E6BE3B0073D91F /* Debug */,
+				3973A2B229E6BE3B0073D91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3973A2B329E6BE3B0073D91F /* Build configuration list for PBXNativeTarget "DoubleCheckCallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3973A2B429E6BE3B0073D91F /* Debug */,
+				3973A2B529E6BE3B0073D91F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3973A28129E6BE370073D91F /* Project object */;
+}
