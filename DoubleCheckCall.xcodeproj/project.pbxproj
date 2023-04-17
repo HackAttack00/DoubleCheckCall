@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3922F0E729ECE7B200E22D65 /* RecentCallListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922F0E629ECE7B200E22D65 /* RecentCallListView.swift */; };
+		3922F0EA29ED0C4400E22D65 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922F0E929ED0C4400E22D65 /* Person.swift */; };
+		3922F0EC29ED112C00E22D65 /* PhoneInfoCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922F0EB29ED112C00E22D65 /* PhoneInfoCellView.swift */; };
 		3973A28D29E6BE370073D91F /* DoubleCheckCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A28C29E6BE370073D91F /* DoubleCheckCallApp.swift */; };
 		3973A28F29E6BE370073D91F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A28E29E6BE370073D91F /* ContentView.swift */; };
 		3973A29129E6BE3B0073D91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3973A29029E6BE3B0073D91F /* Assets.xcassets */; };
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3922F0E629ECE7B200E22D65 /* RecentCallListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCallListView.swift; sourceTree = "<group>"; };
+		3922F0E929ED0C4400E22D65 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3922F0EB29ED112C00E22D65 /* PhoneInfoCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInfoCellView.swift; sourceTree = "<group>"; };
+		3922F0ED29ED159900E22D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3973A28929E6BE370073D91F /* DoubleCheckCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleCheckCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3973A28C29E6BE370073D91F /* DoubleCheckCallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCheckCallApp.swift; sourceTree = "<group>"; };
 		3973A28E29E6BE370073D91F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3922F0E829ED0C1A00E22D65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3922F0E929ED0C4400E22D65 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3973A28029E6BE370073D91F = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +113,9 @@
 		3973A28B29E6BE370073D91F /* DoubleCheckCall */ = {
 			isa = PBXGroup;
 			children = (
+				3922F0ED29ED159900E22D65 /* Info.plist */,
 				3973A28C29E6BE370073D91F /* DoubleCheckCallApp.swift */,
+				3922F0E829ED0C1A00E22D65 /* Model */,
 				3973A2B829E6BED80073D91F /* View */,
 				3973A28E29E6BE370073D91F /* ContentView.swift */,
 				3973A29029E6BE3B0073D91F /* Assets.xcassets */,
@@ -137,6 +154,8 @@
 			children = (
 				3973A2B629E6BED20073D91F /* MainTabbarView.swift */,
 				3973A2B929E6C8D70073D91F /* KeypadView.swift */,
+				3922F0E629ECE7B200E22D65 /* RecentCallListView.swift */,
+				3922F0EB29ED112C00E22D65 /* PhoneInfoCellView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,9 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3973A2BA29E6C8D70073D91F /* KeypadView.swift in Sources */,
+				3922F0E729ECE7B200E22D65 /* RecentCallListView.swift in Sources */,
 				3973A28F29E6BE370073D91F /* ContentView.swift in Sources */,
 				3973A2B729E6BED20073D91F /* MainTabbarView.swift in Sources */,
+				3922F0EA29ED0C4400E22D65 /* Person.swift in Sources */,
 				3973A28D29E6BE370073D91F /* DoubleCheckCallApp.swift in Sources */,
+				3922F0EC29ED112C00E22D65 /* PhoneInfoCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,9 +455,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DoubleCheckCall/Preview Content\"";
+				DEVELOPMENT_TEAM = 3XUYH8A3Z5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = DoubleCheckCall/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Get Phone number list";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -445,7 +469,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCall;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.DoubleCheckCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -461,9 +485,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DoubleCheckCall/Preview Content\"";
+				DEVELOPMENT_TEAM = 3XUYH8A3Z5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = DoubleCheckCall/Info.plist;
+				INFOPLIST_KEY_NSContactsUsageDescription = "Get Phone number list";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -473,7 +499,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCall;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.DoubleCheckCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -488,10 +514,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XUYH8A3Z5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCallTests;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.DoubleCheckCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -507,10 +534,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3XUYH8A3Z5;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCallTests;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.DoubleCheckCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -527,7 +555,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCallUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.DoubleCheckCallUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -544,7 +572,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.HackAttack.DoubleCheckCallUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.DoubleCheckCallUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
