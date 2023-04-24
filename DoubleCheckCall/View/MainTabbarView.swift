@@ -10,7 +10,7 @@ import SwiftUI
 struct MainTabbarView: View {
     var body: some View {
         TabView {
-            RecentCallListView()
+            PhoneBookListView()
             .tabItem{
                 Image(systemName: "list.bullet")
                 Text("최근통화")

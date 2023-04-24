@@ -10,22 +10,30 @@ import CallKit
 import SwiftUI
 import Contacts
 
-struct RecentCallListView: View {
+struct PhoneBookListView: View {
     @ObservedObject var personData: PersonData = PersonData()
+    @State var queryString: String = ""
     
     var body: some View {
-        List(personData.personInfoList) { list in
-            HStack {
-                Text(list.name ?? "")
-                    .foregroundColor(.white)
-                Spacer()
-                Text(list.mobile ?? "")
-                    .foregroundColor(.gray)
+        NavigationView {
+            List() {
+                ForEach(personData.personInfoList) { list in
+                    HStack {
+                        Text(list.name ?? "")
+                            .foregroundColor(.black)
+                        Spacer()
+                        Text(list.mobile ?? "")
+                            .foregroundColor(.gray)
+                    }
+                }
+            }.onAppear {
+                self.fetchContacts(completion: { personInfoList in
+                    self.personData.personInfoList = personInfoList
+                })
             }
-        }.onAppear {
-            self.fetchContacts(completion: { personInfoList in
-                self.personData.personInfoList = personInfoList
-            })
+        }
+        .searchable(text: $queryString, placement: .navigationBarDrawer(displayMode: .always)) {
+            
         }
     }
 
@@ -66,8 +74,8 @@ struct RecentCallListView: View {
     }
 }
 
-//struct RecentCallListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RecentCallListView()
-//    }
-//}
+struct PhoneBookListView_Previews: PreviewProvider {
+    static var previews: some View {
+        PhoneBookListView()
+    }
+}

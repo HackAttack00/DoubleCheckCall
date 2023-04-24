@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3922F0E729ECE7B200E22D65 /* RecentCallListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922F0E629ECE7B200E22D65 /* RecentCallListView.swift */; };
+		3922F0E729ECE7B200E22D65 /* PhoneBookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922F0E629ECE7B200E22D65 /* PhoneBookListView.swift */; };
 		3922F0EA29ED0C4400E22D65 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922F0E929ED0C4400E22D65 /* Person.swift */; };
 		3922F0EC29ED112C00E22D65 /* PhoneInfoCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922F0EB29ED112C00E22D65 /* PhoneInfoCellView.swift */; };
 		3973A28D29E6BE370073D91F /* DoubleCheckCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A28C29E6BE370073D91F /* DoubleCheckCallApp.swift */; };
@@ -19,6 +19,7 @@
 		3973A2AA29E6BE3B0073D91F /* DoubleCheckCallUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A2A929E6BE3B0073D91F /* DoubleCheckCallUITestsLaunchTests.swift */; };
 		3973A2B729E6BED20073D91F /* MainTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A2B629E6BED20073D91F /* MainTabbarView.swift */; };
 		3973A2BA29E6C8D70073D91F /* KeypadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A2B929E6C8D70073D91F /* KeypadView.swift */; };
+		3994E4A529F6D4E50010F257 /* PhoneBookListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3994E4A429F6D4E50010F257 /* PhoneBookListCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3922F0E629ECE7B200E22D65 /* RecentCallListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCallListView.swift; sourceTree = "<group>"; };
+		3922F0E629ECE7B200E22D65 /* PhoneBookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBookListView.swift; sourceTree = "<group>"; };
 		3922F0E929ED0C4400E22D65 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3922F0EB29ED112C00E22D65 /* PhoneInfoCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInfoCellView.swift; sourceTree = "<group>"; };
 		3922F0ED29ED159900E22D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		3973A2A929E6BE3B0073D91F /* DoubleCheckCallUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCheckCallUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3973A2B629E6BED20073D91F /* MainTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarView.swift; sourceTree = "<group>"; };
 		3973A2B929E6C8D70073D91F /* KeypadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypadView.swift; sourceTree = "<group>"; };
+		3994E4A429F6D4E50010F257 /* PhoneBookListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBookListCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,12 +154,21 @@
 		3973A2B829E6BED80073D91F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3994E4A329F6D4930010F257 /* Cell */,
 				3973A2B629E6BED20073D91F /* MainTabbarView.swift */,
 				3973A2B929E6C8D70073D91F /* KeypadView.swift */,
-				3922F0E629ECE7B200E22D65 /* RecentCallListView.swift */,
+				3922F0E629ECE7B200E22D65 /* PhoneBookListView.swift */,
 				3922F0EB29ED112C00E22D65 /* PhoneInfoCellView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3994E4A329F6D4930010F257 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3994E4A429F6D4E50010F257 /* PhoneBookListCellView.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,7 +302,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3973A2BA29E6C8D70073D91F /* KeypadView.swift in Sources */,
-				3922F0E729ECE7B200E22D65 /* RecentCallListView.swift in Sources */,
+				3922F0E729ECE7B200E22D65 /* PhoneBookListView.swift in Sources */,
+				3994E4A529F6D4E50010F257 /* PhoneBookListCellView.swift in Sources */,
 				3973A28F29E6BE370073D91F /* ContentView.swift in Sources */,
 				3973A2B729E6BED20073D91F /* MainTabbarView.swift in Sources */,
 				3922F0EA29ED0C4400E22D65 /* Person.swift in Sources */,
