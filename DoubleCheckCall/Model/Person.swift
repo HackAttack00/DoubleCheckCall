@@ -20,4 +20,5 @@ struct PersonInfo: Identifiable {
     let name:String?
     let mobile:String?
     let home:String?
+    let initial:String?
 }

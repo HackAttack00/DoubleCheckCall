@@ -17,23 +17,39 @@ struct PhoneBookListView: View {
     var body: some View {
         NavigationView {
             List() {
-                ForEach(personData.personInfoList) { list in
+                ForEach(personData.personInfoList.filter { personInfo in
+                    if queryString.isEmpty {
+                        return true
+                    } else if self.includedString(queryString, personName: personInfo.name)
+                        || self.includedString(queryString, personName: personInfo.initial) {
+                        return true
+                    } else {
+                        return false
+                    }
+                }) { list in
                     HStack {
                         Text(list.name ?? "")
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                         Spacer()
                         Text(list.mobile ?? "")
                             .foregroundColor(.gray)
                     }
                 }
-            }.onAppear {
+            }
+            .onAppear {
                 self.fetchContacts(completion: { personInfoList in
                     self.personData.personInfoList = personInfoList
                 })
             }
         }
         .searchable(text: $queryString, placement: .navigationBarDrawer(displayMode: .always)) {
+            let _ = print("queryString = \(queryString)")
             
+            if queryString.isEmpty {
+                let _ = print("비었다")
+            } else {
+                //self.personData.personInfolist 필터링
+            }
         }
     }
 
@@ -61,7 +77,8 @@ struct PhoneBookListView: View {
                         }
                     }
                     
-                    let personInfo = PersonInfo(name: fullName, mobile: number?.stringValue, home: nil)
+                    let initial = extractInitial(fullName)
+                    let personInfo = PersonInfo(name: fullName, mobile: number?.stringValue, home: nil, initial: initial)
                     personInfoList.append(personInfo)
                 }
                 DispatchQueue.main.async {
@@ -71,6 +88,36 @@ struct PhoneBookListView: View {
                 print("Unable to fetch contacts.")
             }
         }
+    }
+    
+    func includedString(_ name:String, personName:String?) -> Bool {
+        if let personName = personName {
+            return personName.contains(name)
+        }
+        return false
+    }
+    
+    func extractInitial(_ string: String) -> String {
+        let koreanInitials: [Character] = ["ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"]
+        
+        var initial = ""
+        
+        for character in string {
+            guard let scalar = character.unicodeScalars.first else {
+                continue
+            }
+            
+            let code = scalar.value
+            
+            if code >= 44032 && code <= 55203 { // check if the character is a Korean syllable
+                let initialCode = Int((code - 44032) / 28 / 21)
+                initial += String(koreanInitials[initialCode])
+            } else {
+                initial += String(character)
+            }
+        }
+        
+        return initial
     }
 }
 
