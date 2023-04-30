@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3922F0E729ECE7B200E22D65 /* PhoneBookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922F0E629ECE7B200E22D65 /* PhoneBookListView.swift */; };
 		3922F0EA29ED0C4400E22D65 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922F0E929ED0C4400E22D65 /* Person.swift */; };
-		3922F0EC29ED112C00E22D65 /* PhoneInfoCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922F0EB29ED112C00E22D65 /* PhoneInfoCellView.swift */; };
+		3922F0EC29ED112C00E22D65 /* PhoneInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3922F0EB29ED112C00E22D65 /* PhoneInfoView.swift */; };
 		3973A28D29E6BE370073D91F /* DoubleCheckCallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A28C29E6BE370073D91F /* DoubleCheckCallApp.swift */; };
 		3973A28F29E6BE370073D91F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3973A28E29E6BE370073D91F /* ContentView.swift */; };
 		3973A29129E6BE3B0073D91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3973A29029E6BE3B0073D91F /* Assets.xcassets */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		3922F0E629ECE7B200E22D65 /* PhoneBookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBookListView.swift; sourceTree = "<group>"; };
 		3922F0E929ED0C4400E22D65 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		3922F0EB29ED112C00E22D65 /* PhoneInfoCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInfoCellView.swift; sourceTree = "<group>"; };
+		3922F0EB29ED112C00E22D65 /* PhoneInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInfoView.swift; sourceTree = "<group>"; };
 		3922F0ED29ED159900E22D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3973A28929E6BE370073D91F /* DoubleCheckCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoubleCheckCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3973A28C29E6BE370073D91F /* DoubleCheckCallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleCheckCallApp.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 				3973A2B629E6BED20073D91F /* MainTabbarView.swift */,
 				3973A2B929E6C8D70073D91F /* KeypadView.swift */,
 				3922F0E629ECE7B200E22D65 /* PhoneBookListView.swift */,
-				3922F0EB29ED112C00E22D65 /* PhoneInfoCellView.swift */,
+				3922F0EB29ED112C00E22D65 /* PhoneInfoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,7 +308,7 @@
 				3973A2B729E6BED20073D91F /* MainTabbarView.swift in Sources */,
 				3922F0EA29ED0C4400E22D65 /* Person.swift in Sources */,
 				3973A28D29E6BE370073D91F /* DoubleCheckCallApp.swift in Sources */,
-				3922F0EC29ED112C00E22D65 /* PhoneInfoCellView.swift in Sources */,
+				3922F0EC29ED112C00E22D65 /* PhoneInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,10 +464,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DoubleCheckCall/Preview Content\"";
-				DEVELOPMENT_TEAM = 3XUYH8A3Z5;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 28K9LD277B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DoubleCheckCall/Info.plist;
@@ -481,8 +484,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.DoubleCheckCall;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = DEBUG_AfreecaTV;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -494,10 +499,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DoubleCheckCall/Preview Content\"";
-				DEVELOPMENT_TEAM = 3XUYH8A3Z5;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 28K9LD277B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DoubleCheckCall/Info.plist;
@@ -511,8 +519,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.DoubleCheckCall;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = DEBUG_AfreecaTV;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -524,14 +534,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3XUYH8A3Z5;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.DoubleCheckCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,14 +556,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3XUYH8A3Z5;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.nowcom.mobile.afreeca.DoubleCheckCall;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
