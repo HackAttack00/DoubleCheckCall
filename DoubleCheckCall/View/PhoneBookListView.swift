@@ -26,13 +26,15 @@ struct PhoneBookListView: View {
                     } else {
                         return false
                     }
-                }) { list in
-                    HStack {
-                        Text(list.name ?? "")
-                            .foregroundColor(.white)
-                        Spacer()
-                        Text(list.mobile ?? "")
-                            .foregroundColor(.gray)
+                }) { personInfo in
+                    NavigationLink(destination: PhoneInfoView(personInfo: personInfo)) {
+                        HStack {
+                            Text(personInfo.name ?? "")
+                                .foregroundColor(.white)
+                            Spacer()
+                            Text(personInfo.mobile ?? "")
+                                .foregroundColor(.gray)
+                        }
                     }
                 }
             }
